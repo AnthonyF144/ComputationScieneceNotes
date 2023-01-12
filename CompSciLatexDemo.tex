@@ -1,0 +1,40 @@
+\documentclass{article} % this just tells the complilier what type of file it is
+\usepackage[utf8]{inputenc} 
+\usepackage{amsmath}
+
+\title{CompSciLatexDemo}
+\author{Anthony Fung}
+\date{\date} % this will input the current date
+
+\begin{document} % this is needed to begin the document
+
+\maketitle
+
+\section{Equations}
+
+This is a demonstration of some of the latex commands you need for the assignment.
+% if you leave a gap it will make another paragraph
+For the assignment
+\begin{equation}
+f(x) = x_n^{2 \frac{1}{2} } \sin{(x)} \cos{(x)} \log{(x)}
+\end{equation}
+To write the math expression in-line (i.e. in the text), you have to put a \$ on each side of the symbol. SO if we want to represent the function f(x) in-line,  we should write it with a \$ on either side: $f(x)$
+% ${insert function here}$
+% the $$ is the same as [], so it will not include a number next to the equation.
+% Another way of doing mathmode is using, [\ \ ] this acts as math mode
+% Example: \[\mathcal{O}(N log N)\]
+% this will not include a number next to the equation
+
+% If there is a number sign next to the function you use 
+% \begin{equation}          \end{equation}
+% this will include a number next tot the equation
+
+
+\section{Introduction}
+
+\end{document}
+
+
+% pdflatex exports it as a pdf, you just put the file 
+% pdflatex {insert file name} without the {}
+% pdf latex example.pdf&        - With the inclusion of "&" it will do stuff in the background
