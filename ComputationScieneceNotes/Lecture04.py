@@ -3,7 +3,8 @@
 
 import numpy as np
 
-def bisect(f, a0, b0, k_max, eps_x, eps_f):   
+def bisect(f, a0, b0, k_max, eps_x, eps_f):     # This will be the same for all bisections functions
+                                                # You will change what you feed the function though
      
     conv = False                     # flag for convergence
     a = a0
@@ -43,8 +44,8 @@ def bisect(f, a0, b0, k_max, eps_x, eps_f):
     return c,max_error,conv
 
 
-def f(x):
-    return x**2 - 5
+def f(x):               # Where we are solving f(x) = 0
+    return x**2 - 5     # ONE OF THE FEW THINGS YOU MIGHT HAVE TO CHANGE
 
 # declaring variables
 a0 = 2.0
